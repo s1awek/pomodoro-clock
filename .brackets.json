@@ -5,8 +5,8 @@
             "sass.options": {
                 "outputDir": "../css",
                 "imagePath": null,
-                "sourceComments": "map",
-                "outputStyle": "expanded"
+                "sourceComments": false,
+                "outputStyle": "compact"
             },
             "me.drewh.jsbeautify.on_save": false,
             "brackets-git.gitPath": "git"
