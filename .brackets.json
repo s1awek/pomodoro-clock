@@ -1,0 +1,20 @@
+{
+    "path": {
+        "scss/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css",
+                "imagePath": null,
+                "sourceComments": "map",
+                "outputStyle": "expanded"
+            },
+            "me.drewh.jsbeautify.on_save": false,
+            "brackets-git.gitPath": "git"
+        },
+        "includes/*.scss": {
+            "sass.enabled": false,
+            "linting.collapsed": true,
+            "brackets-git.gitPath": "git"
+        }
+    }
+}
