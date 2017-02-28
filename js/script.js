@@ -147,6 +147,8 @@ $(document).ready(function () {
         removeClasses();
         z = pomodoroTime * 60;
         $('.pomodoro-timer').html(pomodoroTime);
+        $('#control').removeClass('fa-pause');
+        $('#control').addClass('fa-play');
         $('.time-container').html(timeFormater(z));
     });
 });
