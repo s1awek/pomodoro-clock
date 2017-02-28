@@ -9,7 +9,8 @@
                 "outputStyle": "compact"
             },
             "me.drewh.jsbeautify.on_save": false,
-            "brackets-git.gitPath": "git"
+            "brackets-git.gitPath": "git",
+            "linting.collapsed": false
         },
         "includes/*.scss": {
             "sass.enabled": false,

@@ -10,6 +10,16 @@
 body {
     font-family: $fontStack;
     color: $color-primary-0;
+    background-image: url('../img/matrix.jpg');
+}
+
+.border {
+    background-color: #72e900;
+    height: 360px;
+    width: 420px;
+    margin: 50px auto 0 auto;
+    padding-top: 20px;
+    border-radius: 5px;
 }
 
 .current-time {
@@ -26,17 +36,41 @@ body {
     background-color: $color-primary-0;
 }
 
-.toggle-timer-control {
+.toggle-timer-control,
+.reset {
     width: 60px;
     height: 60px;
-    margin: auto;
+    margin: auto 15px;
     background-color: $color-primary-1;
     color: $color-primary-3;
+    -webkit-transition: -webkit-all $amount-of-time ease-out;
+    -moz-transition: -moz-all $amount-of-time ease-out;
+    -o-transition: -o-all $amount-of-time ease-out;
+    -ms-transition: -ms-all $amount-of-time ease-out;
+    transition: all $amount-of-time ease-out;
     @include border-radius(50%);
     .control {
         margin: auto;
         font-size: 30px;
     }
+}
+
+.fa,
+.set {
+    -webkit-transition: -webkit-all $amount-of-time ease-out;
+    -moz-transition: -moz-all $amount-of-time ease-out;
+    -o-transition: -o-all $amount-of-time ease-out;
+    -ms-transition: -ms-all $amount-of-time ease-out;
+    transition: all $amount-of-time ease-out;
+}
+
+.toggle-timer-control:hover .fa,
+.reset:hover .fa {
+    font-size: 35px;
+}
+
+.set:hover {
+    transform: rotate(180deg);
 }
 
 .break-time-container,
@@ -46,14 +80,14 @@ body {
     color: $color-primary-3;
 }
 
-.break-progress-bar, .pomodoro-progress-bar {
-	background-color: $color-primary-4;
+.break-progress-bar,
+.pomodoro-progress-bar {
+    background-color: $color-primary-4;
 }
 
-.break-time{
+.break-time {
     border-right: 1px solid $color-primary-3;
 }
-
 
 .description {
     background-color: $color-primary-1;
@@ -73,20 +107,13 @@ body {
     justify-content: center;
 }
 
-.break-progress-bar-1,
-.break-progress-bar-2,
-.break-progress-bar-3 {
-    flex: 1;
-    text-align: center;
-    background-color: $color-primary-4;
-    color: $color-primary-1;
-    @include border-progress;
-}
-
-.pomodoro-progress-bar-1,
-.pomodoro-progress-bar-2,
-.pomodoro-progress-bar-3,
-.pomodoro-progress-bar-4 {
+.progress-bar-1,
+.progress-bar-2,
+.progress-bar-3,
+.progress-bar-4,
+.progress-bar-5,
+.progress-bar-6,
+.progress-bar-7 {
     flex: 1;
     text-align: center;
     background-color: $color-primary-4;
@@ -111,7 +138,10 @@ body {
     background-color: $color-primary-3;
 }
 
-.toggle-timer-control {
+.toggle-timer-control,
+.reset,
+.control-wrapper {
+    justify-content: center;
     display: flex;
 }
 
@@ -124,4 +154,32 @@ body {
 
 .description {
     text-align: center;
+}
+
+.pomodoro-plus,
+.pomodoro-minus,
+.break-plus,
+.break-minus,
+.toggle-timer-control,
+.reset {
+    cursor: pointer;
+    line-height: 1.3em;
+}
+
+.current-sesion {
+    background: repeating-linear-gradient( to right, $color-primary-0, $color-primary-0 2px, $color-primary-4 2px, $color-primary-4 4px);
+}
+
+.done {
+    background-color: $color-primary-1;
+    color: $color-primary-4;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
