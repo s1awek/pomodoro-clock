@@ -149,5 +149,4 @@ $(document).ready(function () {
         $('.pomodoro-timer').html(pomodoroTime);
         $('.time-container').html(timeFormater(z));
     });
-
 });

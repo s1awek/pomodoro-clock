@@ -10,7 +10,7 @@
             },
             "me.drewh.jsbeautify.on_save": false,
             "brackets-git.gitPath": "git",
-            "linting.collapsed": false
+            "linting.collapsed": true
         },
         "includes/*.scss": {
             "sass.enabled": false,
